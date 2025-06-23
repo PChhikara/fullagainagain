@@ -137,7 +137,7 @@ const gaOptions = {
   "Generic": ["Generic – Communication", "Generic – Critical Judgment", "Generic – Own Learning"],
   "Employability": ["Employability – Readiness", "Employability – Teamwork", "Employability – Ownership"],
   "Ethics & Values": ["Ethics & Values – Practice"],
-  "Student Contribution": ["Student Contribution – Ask", "Student Contribution – Group"],
+  "Student Contribution": ["Student Contribution – Ask", "Student Contribution – Group", “Student Contribution – Taking Risks”],
   "Subject Evolution": ["Subject Evolution – Temporal", "Subject Evolution – Human"]
 };
 
@@ -211,6 +211,10 @@ const sentenceStructures = {
     template: ["Graduates will be able to", "[verb]", "actively in", "[group discussions/projects]", "to", "[advance subject understanding]"],
     verbs: ["participate", "contribute", "collaborate", "engage"]
   },
+  "Student Contribution – Taking Risks": {
+    template: ["Graduates will be able to", "[verb]", "when they", "[student’s contribution or behavior]", "to", "[context or purpose]"],
+    verbs: ["risk", "appreciate", "persevere", "embrace uncertainty", "reflect"]
+  },
   "Subject Evolution – Temporal": {
     template: ["Graduates will be able to", "[verb]", "the evolution of", "[subject]", "across", "[time and cultures]"],
     verbs: ["trace", "analyze", "reflect on", "study"]
@@ -238,6 +242,7 @@ const sentenceStructures = {
   "Ethics & Values – Practice": "Graduates will be able to uphold ethical and humanistic values in academic and professional decision-making.",
   "Student Contribution – Ask": "Graduates will be able to contribute by raising relevant questions and participating in intellectual discourse in mathematics.",
   "Student Contribution – Group": "Graduates will be able to participate in group-based academic tasks such as collaborative problem-solving to advance subject understanding.",
+  "Student Contribution – Taking Risks": "Graduates will be able to embrace uncertainty when they attempt open-ended problems to deepen their mathematical thinking.",      
   "Subject Evolution – Temporal": "Graduates will be able to trace the evolution of mathematics across historical and contemporary contexts.",
   "Subject Evolution – Human": "Graduates will be able to appreciate contributions of diverse individuals and cultures in shaping mathematical thought.",
 };
@@ -497,6 +502,12 @@ const cloTemplates = {
     template: ["Students will be able to", "[verb]", "in", "[group activity]", "to", "[purpose]"],
     example: "Students will be able to collaborate in peer groups to build on others’ ideas for solving challenging integration tasks."
   },
+    ,
+  "Student Contribution – Taking Risks": {
+    verbs: ["attempt", "reflect", "share mistakes", "revise", "persist", "explore", "tolerate ambiguity"],
+    template: ["Students will be able to", "[verb]", "as they", "[action]", "to", "[learning context]"],
+    example: "SStudents will be able to reflect as they attempt novel problems to explore multiple solution strategies."
+  }
   "Subject Evolution – Temporal": {
     verbs: ["describe", "compare", "explain", "outline", "map"],
     template: ["Students will be able to", "[verb]", "[historical concepts]", "related to", "[subject area]"],
@@ -775,6 +786,7 @@ const step2SubGAOptions = [
   "Ethics & Values – Practice",
   "Student Contribution – Ask",
   "Student Contribution – Group",
+"Student Contribution – Taking Risks",
   "Subject Evolution – Temporal",
   "Subject Evolution – Human"
 ];
